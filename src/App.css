@@ -174,3 +174,218 @@ body {
   background-color: #ffffff;
   line-height: 1.4;
 }
+
+.Result {
+  width: 100%;
+}
+
+.ResultWrap_1 {
+  background-color: #51b786;
+}
+
+.ResultWrap_2 {
+  background-color: #e99696;
+}
+
+.ResultWrap_3 {
+  background-color: #a296e9;
+}
+
+.ResultWrap_4 {
+  background-color: #ddc25f;
+}
+
+.ResultPage {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+.Result .imgWrap {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  opacity: 0;
+  animation: smoothAppear2 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear2 0.5s ease-in-out 0s 1 normal forwards;
+}
+
+.Result .imgWrap img {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.Result h1,
+.Result ul {
+  padding: 0px 20px;
+}
+
+.Result h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #303030;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.Result h1 span {
+  font-family: "yg-jalnan";
+  display: block;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.Result ul {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.Result ul li {
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #303030;
+  word-break: keep-all;
+}
+
+.Result ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.Result h2 {
+  font-family: "yg-jalnan";
+  font-size: 20px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+
+.Result .reBtn {
+  font-family: "yg-jalnan";
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  display: block;
+  background-color: #303030;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 20px 10px;
+  font-size: 16px;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.Result .shareWrap {
+  display: flex;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+.Result .shareBtn {
+  width: calc((100% / 2) - 10px);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.Result .shareBtn.Link {
+  background: #999999;
+}
+
+.Result .shareBtn.Kakao {
+  background: #fee339;
+}
+
+@media (hover: hover) {
+  .Test .answerBtn:hover {
+    background-color: #e4b74c;
+    border: 1px solid #e4b74c;
+  }
+}
+
+@media (max-width: 500px) {
+  .Home h1 {
+    font-size: 6.2vw;
+  }
+  .Home .subTitle,
+  .Home .madeBy {
+    font-size: 4vw;
+  }
+  .Home .startBtn {
+    width: calc(100% - 40px);
+    font-size: 4.6vw;
+  }
+  .Test h1 {
+    font-size: 4.6vw;
+  }
+  .Test .answerBtn,
+  .Result .reBtn {
+    font-size: 3.6vw;
+  }
+  .Result h1 {
+    font-size: 4vw;
+  }
+  .Result h1 span {
+    margin-top: 3vw;
+    font-size: 9vw;
+  }
+  .Result h2 {
+    font-size: 4.6vw;
+  }
+  .Result ul li {
+    font-size: 3.4vw;
+  }
+  .Result ul {
+    width: calc(100% - 20px);
+    padding: 20px 10px;
+  }
+  .Result .shareWrap,
+  .Result .reBtn {
+    width: calc(100% - 20px);
+  }
+  .Result .shareBtn {
+    width: calc((100% / 2) - 5px);
+  }
+  .Result .shareWrap {
+    margin-bottom: 10px;
+  }
+}
