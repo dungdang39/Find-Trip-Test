@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+}
+
+.App {
+  font-family: "SUIT-Regular";
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes smoothAppear2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Home {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Home .subTitle {
+  font-size: 18px;
+  color: #a1a1a1;
+  font-weight: 400;
+  margin-bottom: 16px;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.Home .imgWrap {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  padding-top: 75%;
+  animation: smoothAppear2 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear2 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+
+.Home img {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.Home h1 {
+  font-family: "yg-jalnan";
+  color: #303030;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.Home .startBtn {
+  font-family: "yg-jalnan";
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e4b74c;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 20px 10px;
+  color: #303030;
+  text-decoration: none;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+.Home .madeBy {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #a1a1a1;
+  animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  -webkit-animation: smoothAppear 0.5s ease-in-out 0s 1 normal forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
