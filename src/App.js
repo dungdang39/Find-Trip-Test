@@ -6,6 +6,8 @@ import { Reset } from "styled-reset";
 import Home from "./pages/Home";
 import Test from "./pages/Test";
 import Result from "./pages/Result";
+import QuestionList from "./components/QuestionList";
+import ResultList from "./components/ResultList";
 
 function App() {
   return (
@@ -14,8 +16,11 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/test" element={<Test />} />
-          <Route path="/result/:id" element={<Result />} />
+          <Route path="/test" element={<Test contents={QuestionList} />} />
+          <Route
+            path="/result/:id"
+            element={<Result resultEl={ResultList} />}
+          />
         </Routes>
       </div>
     </BrowserRouter>
